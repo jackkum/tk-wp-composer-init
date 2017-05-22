@@ -3,6 +3,14 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
+    },
+    {
+      "url": "https://github.com/jackkum/buddypress-block-activity-stream-types-ls.git",
+      "type": "git"
+    },
+    {
+      "url": "https://github.com/jackkum/BP-Default.git",
+      "type": "git"
     }
   ],
   "require": {
@@ -13,6 +21,10 @@
     "wpackagist-plugin/posts-to-posts": "1.4.x",
     "wpackagist-plugin/captcha":">=3.9",
 
+    "jackkum/buddypress-block-activity-stream-types-ls": "*",
+    "jackkum/BP-Default": "*",
+
+    "wpackagist-plugin/edit-author-slug": "~1.3.0",
     "wpackagist-plugin/admin-bar-dashboard-control": "~1.0.3",
     "wpackagist-plugin/advanced-code-editor": "~2.2.6",
     "wpackagist-plugin/advanced-recent-posts": "~0.6.14",
@@ -66,6 +78,10 @@
     }
   },
   "config": {
-    "secure-http": false
-  }
+    "secure-http": false,
+    "github-oauth": {
+      "github.com": "put your github token here"
+    }
+  },
+  "minimum-stability": "dev"
 }
